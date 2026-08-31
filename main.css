@@ -1,3 +1,32 @@
 * {
     border: solid 1px black;
+    margin: 0;
+}
+
+
+/* HEADER SECTION */
+header {
+    margin-bottom: 2em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* MAIN SECTION */
+main {
+    margin-bottom: 2em;
+}
+
+main .about {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+}
+
+
+/* FOOTER SECTION */
+footer {
+    display: flex;
+    justify-content: center;
 }
