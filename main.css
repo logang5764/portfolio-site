@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
     --background: #3D4A41;
     --surface: #4F5F54;
@@ -42,6 +44,8 @@ header {
 
     background-color: var(--header-back);
     color: var(--header-text);
+
+    font-family: "Lora", serif;
 }
 
 
@@ -50,6 +54,8 @@ main {
     margin-bottom: 2em;
 
     color: var(--text-pri);
+
+    font-family: "Nunito", sans-serif;
 }
 
 main .about {
@@ -83,4 +89,6 @@ footer {
 
     background-color: var(--footer-back);
     color: var(--footer-text);
+
+    font-family: "Nunito", sans-serif;
 }
