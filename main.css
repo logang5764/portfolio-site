@@ -26,6 +26,14 @@
     border-radius: 0.5em;
 }
 
+h1, h2, h3 {
+    font-family: "Lora", serif;
+    font-weight: 200;
+}
+p {
+    font-family: "Nunito", sans-serif;
+}
+
 body {
     margin: 0.5em;
 
@@ -39,6 +47,7 @@ header {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     padding: 1em;
 
@@ -46,14 +55,20 @@ header {
     color: var(--header-text);
 
     font-family: "Lora", serif;
-    font-size: larger;
     letter-spacing: 0.3em;
+}
+
+header i {
+    font-size: xx-large;
+    color: var(--background);
 }
 
 
 /* MAIN SECTION */
 main {
     margin-bottom: 2em;
+    margin-left: 7.5em;
+    margin-right: 7.5em;
 
     color: var(--text-pri);
 
@@ -79,6 +94,12 @@ main .box {
     background-color: var(--surface);
 
     border-left: solid var(--borders);
+}
+
+.about .box:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
