@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --background: #3D4A41;
+    --surface: #4F5F54;
+
+    --header-back: #6A7D70;
+    --header-text: #F4F6F2;
+
+    --footer-back: #2B352E;
+    --footer-text: #C8D4CC;
+
+    --borders: #6A7D70;
+
+    --text-pri: #F4F6F2; 
+    --text-sec: #C8D4CC; /* Dates etc. */
+
+    --interactive: #5CC2BD;
+    --interatext: #123836;
+}
+
 * {
-    border: solid 1px black;
+    /* border: solid 1px black; */
     margin: 0;
 
     border-radius: 0.5em;
@@ -7,6 +28,8 @@
 
 body {
     margin: 0.5em;
+
+    background-color: var(--background);
 }
 
 
@@ -18,12 +41,23 @@ header {
     justify-content: space-between;
 
     padding: 1em;
+
+    background-color: var(--header-back);
+    color: var(--header-text);
+
+    font-family: "Lora", serif;
+    font-size: larger;
+    letter-spacing: 0.3em;
 }
 
 
 /* MAIN SECTION */
 main {
     margin-bottom: 2em;
+
+    color: var(--text-pri);
+
+    font-family: "Nunito", sans-serif;
 }
 
 main .about {
@@ -36,11 +70,15 @@ main .about {
 
 main > div {
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5em;;
 }
 
 main .box {
     padding: 1em;
+
+    background-color: var(--surface);
+
+    border-left: solid var(--borders);
 }
 
 
@@ -50,4 +88,10 @@ footer {
     justify-content: center;
 
     padding: 0.5em;
+
+    background-color: var(--footer-back);
+    color: var(--footer-text);
+
+    font-family: "Nunito", sans-serif;
+    font-size: small;
 }
