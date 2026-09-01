@@ -46,6 +46,8 @@ header {
     color: var(--header-text);
 
     font-family: "Lora", serif;
+    font-size: larger;
+    letter-spacing: 0.3em;
 }
 
 
@@ -91,4 +93,5 @@ footer {
     color: var(--footer-text);
 
     font-family: "Nunito", sans-serif;
+    font-size: small;
 }
