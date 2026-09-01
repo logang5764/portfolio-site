@@ -1,12 +1,29 @@
+:root {
+    --background: #3D4A41;
+    --surface: #4F5F54;
+
+    --borders: #6A7D70;
+
+    --text-pri: #F4F6F2; 
+    --text-sec: #C8D4CC; /* Dates etc. */
+
+    --interactive: #5CC2BD;
+    --interatext: #123836;
+}
+
 * {
-    border: solid 1px black;
+    /* border: solid 1px black; */
     margin: 0;
 
     border-radius: 0.5em;
+
+    color: var(--text-pri);
 }
 
 body {
     margin: 0.5em;
+
+    background-color: var(--background);
 }
 
 
@@ -18,6 +35,8 @@ header {
     justify-content: space-between;
 
     padding: 1em;
+
+    background-color: var(--surface);
 }
 
 
@@ -36,11 +55,15 @@ main .about {
 
 main > div {
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5em;;
 }
 
 main .box {
     padding: 1em;
+
+    background-color: var(--surface);
+
+    border: solid var(--borders);
 }
 
 
@@ -50,4 +73,6 @@ footer {
     justify-content: center;
 
     padding: 0.5em;
+
+    background-color: var(--surface);
 }
