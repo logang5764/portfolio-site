@@ -26,12 +26,15 @@
     border-radius: 0.5em;
 }
 
-h1, h2, h3 {
+h1, h2:not(header h2), h3 {
     font-family: "Lora", serif;
     font-weight: 200;
+    margin-bottom: 0.5em;
 }
+
 p {
     font-family: "Nunito", sans-serif;
+    line-height: 1.5;
 }
 
 body {
@@ -45,6 +48,9 @@ body {
 header {
     margin-bottom: 2em;
 
+    border-bottom: solid var(--footer-back);
+    border-top: solid var(--footer-back);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,12 +61,17 @@ header {
     color: var(--header-text);
 
     font-family: "Lora", serif;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.5em;
 }
 
 header i {
     font-size: xx-large;
     color: var(--background);
+}
+
+header h2 {
+    font-family: "Lora", serif;
+    font-weight: 200;
 }
 
 
@@ -89,11 +100,12 @@ main > div {
 }
 
 main .box {
-    padding: 1em;
+    padding: 1em 3em;
 
     background-color: var(--surface);
 
     border-left: solid var(--borders);
+    border-right: solid var(--borders);
 }
 
 .about .box:first-of-type {
@@ -109,6 +121,9 @@ footer {
     justify-content: center;
 
     padding: 0.5em;
+
+    border-bottom: solid var(--surface);
+    border-top: solid var(--surface);
 
     background-color: var(--footer-back);
     color: var(--footer-text);
