@@ -30,6 +30,8 @@ h1, h2:not(header h2), h3 {
     font-family: "Lora", serif;
     font-weight: 200;
     margin-bottom: 0.5em;
+
+    color: var(--text-sec);
 }
 
 p {
