@@ -11,12 +11,13 @@
     --footer-text: #C8D4CC;
 
     --borders: #6A7D70;
+    --borders-light: #8FA395;
 
-    --text-pri: #F4F6F2; 
+    --text-pri: #F4F6F2;
     --text-sec: #C8D4CC; /* Dates etc. */
 
-    --interactive: #5CC2BD;
-    --interatext: #123836;
+    --interactive: #82B29A;
+    --interatext: #111E17;
 }
 
 * {
@@ -26,7 +27,9 @@
     border-radius: 0.5em;
 }
 
-h1, h2:not(header h2), h3 {
+h1,
+h2:not(header h2),
+h3 {
     font-family: "Lora", serif;
     font-weight: 200;
     margin-bottom: 0.5em;
@@ -96,9 +99,10 @@ main .about {
     gap: 0.5em;
 }
 
-main > div {
+main>div {
     margin-top: 0.5em;
-    margin-bottom: 0.5em;;
+    margin-bottom: 0.5em;
+    ;
 }
 
 main .box {
@@ -116,6 +120,11 @@ main .box {
     align-items: center;
 }
 
+.about .box:first-of-type img {
+    max-width: 16em;
+    max-height: 16em;
+}
+
 /* PROJECT STYLING */
 .project-box {
     margin: 2em 10em;
@@ -125,10 +134,43 @@ main .box {
     margin-bottom: 1.5em;
 }
 
-.project-box div {
+.project-box div:first-of-type {
     margin-bottom: 0.5em;
 
+    display: grid;
+
+    grid-template-areas: "left content right";
+
+    justify-content: center;
+    align-items: center;
+}
+
+.project-box .image-box {
     background-color: var(--header-back);
+
+    grid-area: content;
+
+    max-width: 35em;
+    max-height: 22em;
+
+    border-top: solid var(--borders-light);
+    border-bottom: solid var(--borders-light);
+
+    display: flex;
+    padding: 2em;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.project-box div i {
+    font-size: 2.5em;
+
+    color: var(--interactive);
+}
+
+.image-box img {
+    max-width: 60%;
 }
 
 
