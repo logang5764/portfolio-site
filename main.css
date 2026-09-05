@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --background: #3D4A41;
+    --background: #1c1b1a;
     --surface: #4F5F54;
 
     --header-back: #6A7D70;
@@ -114,6 +114,21 @@ main .box {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* PROJECT STYLING */
+.project-box {
+    margin: 2em 10em;
+}
+
+.project-box h3 {
+    margin-bottom: 1.5em;
+}
+
+.project-box div {
+    margin-bottom: 0.5em;
+
+    background-color: var(--header-back);
 }
 
 
