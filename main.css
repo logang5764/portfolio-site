@@ -27,7 +27,7 @@
     border-radius: 0.5em;
 }
 
-h1,
+h1:not(.greeting h1),
 h2:not(header h2),
 h3 {
     font-family: "Lora", serif;
@@ -79,6 +79,19 @@ header h2 {
     font-weight: 200;
 }
 
+/* GREETING SECTION */
+.greeting {
+    display: flex;
+    justify-content: center;
+
+    margin: 4em auto;
+
+    font-family: "Lora", serif;
+    letter-spacing: 0.75em;
+    font-size: 1.2em;
+
+    color: var(--surface);
+}
 
 /* MAIN SECTION */
 main {
