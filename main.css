@@ -138,6 +138,21 @@ main .box {
     max-height: 16em;
 }
 
+/* SKILLS STYLING */
+.skills-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: var(--header-back);
+
+    border-top: solid var(--borders-light);
+    border-bottom: solid var(--borders-light);
+}
+
 /* PROJECT STYLING */
 .project-box {
     display: flex;
