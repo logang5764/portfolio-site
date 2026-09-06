@@ -204,6 +204,28 @@ main .box {
     max-width: 60%;
 }
 
+/* RESUME STYLING */
+.resume-box {
+    display: flex;
+    justify-content: center;
+}
+
+.resume-box iframe {
+    padding: 1em;
+
+    width: 70%;
+    height: 65em;
+
+    background-color: var(--header-back);
+
+    border-left: none;
+    border-right: none;
+
+    border-top: solid var(--borders-light);
+    border-bottom: solid var(--borders-light);
+}
+
+
 /* CONTACT STYLING */
 .contact-box {
     display: grid;
