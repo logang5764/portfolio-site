@@ -204,6 +204,13 @@ main .box {
     max-width: 60%;
 }
 
+/* RESUME STYLING */
+.resume-box {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* CONTACT STYLING */
 .contact-box {
     display: grid;
