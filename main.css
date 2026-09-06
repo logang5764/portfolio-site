@@ -127,6 +127,9 @@ main .box {
 
 /* PROJECT STYLING */
 .project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2em 10em;
 }
 
